@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Assignment-9</title>
+</head>
+<body>
+  
+  <div class="program">
+    <div class="container">
+      <div class="header">
+        <h1>BookMarkers</h1>
+      </div>
+      <div class="form center text-center">
+        <input type="text" class="w-75 is-invalid" id="bookmark-name" placeholder="Bookmark Name">
+        <div class="alert alert-danger p-1 w-75 d-none error">Name Is Required</div>
+        <input type="text" class="w-75" id="bookmark-url" placeholder="Bookmark URL">
+        <div class="alert alert-danger p-1 w-75 d-none error">URL Is Required</div>
+        <button id="btn" disabled class="btn btn-main rounded-pill">Submit</button>
+      </div>
+      <div class="search center">
+        <input type="text" class="w-75 is-invalid" id="search" placeholder="Search By Name">
+      </div>
+      <div class="bookmark-list">
+        <table class="table table-striped table-hover">
+          <thead>
+            <th>Bookmark Name</th>
+            <th>Bookmark URL</th>
+            <th>Options</th>
+          </thead>
+          <tbody id="display">
+
+          </tbody>
+        </table>
+      </div>
+      <footer>
+        <p>© 2022 Bookmarker Inc.</p>
+      </footer>
+    </div>
+  </div>
+  
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
